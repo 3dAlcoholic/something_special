@@ -5747,7 +5747,7 @@ summary {
 /* background of site */
 body {                                                    
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(/assets/img/test4.png);
+  background-image: url(/assets/img/background.png);
 
   background-repeat: no-repeat;
   background-size: cover;
