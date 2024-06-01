@@ -5747,7 +5747,8 @@ summary {
 /* background of site */
 body {                                                    
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(/assets/img/Nebula.png);
+  background-image: url(/assets/img/test4.png);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -7253,5 +7254,9 @@ body::-webkit-scrollbar-thumb {
 /* Add this to your styles.css or within a <style> block in your HTML */
 
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
 
