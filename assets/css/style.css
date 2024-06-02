@@ -7259,4 +7259,22 @@ body::-webkit-scrollbar-thumb {
   height: auto;
 }
 
-
+.adjustable-container {
+  max-width: 10%; /* Default maximum width */
+  margin: auto; /* Center the container */
+  box-shadow: 0 0 30px #00FFFF;
+  background: #000000a3;
+  border: 2px solid #ffcf40;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.inner-container {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  text-align: center;
+  border-color: transparent;
+  color: #3dbfdf;
+  border-radius: 0.5rem;
+}
