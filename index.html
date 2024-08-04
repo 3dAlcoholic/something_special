@@ -5,27 +5,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <title>PrimeApe The Fountain</title>
-<meta name="title" content="PrimeApe The Fountain" />
-<meta name="description" content="PrimeApe The Fountain, Be sure to join our Telegram to stay up to date on our Protocol." />
+  <title>Prime Ape - The Fountain</title>
+<meta name="title" content="Prime Ape - The Fountain" />
+<meta name="description" content="The Fountain is a 1% a day ROI dApp where users can earn a consistent 1% daily return on their Bananas (up to 365%) through compounding rewards." />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
-<meta property="og:url" content=" " />
-<meta property="og:title" content="PrimeApe The Fountain" />
-<meta property="og:description" content="PrimeApe The Fountain, Be sure to join our Telegram to stay up to date on our Protocol." />
-<meta property="og:image" content="https://i.ibb.co/2MbvNMK/Screenshot-20240302-201948-Cap-Cut.webp" />
+<meta property="og:url" content="thefountain.io" />
+<meta property="og:title" content="Prime Ape - The Fountain" />
+<meta property="og:description" content="The Fountain is a 1% a day ROI dApp where users can earn a consistent 1% daily return on their Bananas (up to 365%) through compounding rewards." />
+<meta property="og:image" content="https://ibb.co/Htjjd36" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content=" " />
-<meta property="twitter:title" content="PrimeApe The Fountain" />
-<meta property="twitter:description" content="PrimeApe The Fountain, Be sure to join our Telegram to stay up to date on our Protocol." />
-<meta property="twitter:image" content="https://i.ibb.co/2MbvNMK/Screenshot-20240302-201948-Cap-Cut.webp" />
+<meta property="twitter:url" content="thefountain.io" />
+<meta property="twitter:title" content="Prime Ape - The Fountain" />
+<meta property="twitter:description" content="The Fountain is a 1% a day ROI dApp where users can earn a consistent 1% daily return on their Bananas (up to 365%) through compounding rewards." />
+<meta property="twitter:image" content="https://ibb.co/Htjjd36" />
   
   <!-- Favicons -->
-  <link href="assets/img/ERS1.png" rel="icon" type="image/png">
-  <link href="assets/img/ERS1.png" rel="apple-touch-icon">
+  <link href="assets/img/web.jpg" rel="icon" type="image/png">
+  <link href="assets/img/web.jpg" rel="apple-touch-icon">
   
   <!-- Google Fonts -->
   <link
@@ -38,10 +38,11 @@
   <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+  
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/styleNew.css" rel="stylesheet" />
@@ -53,121 +54,332 @@
 
   <script>
     document.addEventListener('contextmenu', function (e) {
-      e.preventDefault();
-    });
+    // Allow right-click on input fields
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+        return;
+    }
+    e.preventDefault();
+});
+
+
+
+
+
   </script>
 
-  <header id="header" class="fixed-top">
-    <div class="d-flex align-items-center justify-center">
+<header id="header" class="fixed-top">
+  <div class="d-flex align-items-center justify-center">
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li>
-          
-            <li class="nav-item">
-              <a class="nav-link text-light" href="fountain.html"><strong>Fountain</strong></a>
-            </li>
-          </li>
+          <ul>
+              <li>
+                  <a class="nav-item">
+                      <button id="enableMetamask" class="connect-btn" onclick="myConnect()">
+                          <span class="icon icon-connect"></span>
+                          <span>Connect</span>
+                      </button>
+                  </a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="https://bafybeicb2hlad6zs4kc4yvn5xbbzti6krjtpoxrysg42d4e5s5oubbipum.ipfs.dweb.link/#/token/0x898515c05794e195b4BA11c3e4e5A6d3c2a44FeC "><strong>Fountain Contract</strong></a>              
-               </li>
-               <li>              
-                
-            <li class="nav-item">
-              <a class="nav-link text-light" href="https://prime-ape.com/"><strong>Farms</strong></a>
-            </li>
-          </li>
-          <a class="nav-link">
-            <button id="enableMetamask" class=" connect-btn" onclick="myConnect()">
-              <span class="icon icon-connect"></span>
-              <span>Connect</span>
-            </button>
-          </a>
+                  <a class="nav-link text-light" href="https://prime-ape.com/"><strong>The Farm</strong></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light" href="https://bafybeicb2hlad6zs4kc4yvn5xbbzti6krjtpoxrysg42d4e5s5oubbipum.ipfs.dweb.link/#/address/0xB19D9375a964455F39D404fBC03Ff4c9aF986780"><strong>Fountain Contract</strong></a>
+              </li>
+              <div class="dropdown">
+                <button class="dropbtn">Socials</button>
+                <div class="dropdown-content">
+                    <a class="nav-item" href="https://x.com/PrimeApe_Pulse" target="_blank">
+                        <img class="nav-logo" id="Twitter" alt="" src="assets/img/twitter.svg" />
+                        Twitter
+                    </a>
+                    <a class="nav-item" href="https://t.me/PrimeApePulse" target="_blank">
+                        <img class="nav-logo" id="telegram" alt="" src="assets/img/telegram.svg" />
+                        Telegram
+                    </a>
+                </div>
+            </div>
         </li>
-      </li>
-          
-          </li>
-          <li>
-            
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle "></i>
       </nav>
-    </div>
-  </header>
-  <section id="hero" class="d-grid align-items-center justify-content-left mt-5">
-    <div style="padding-bottom: 10px;">
-      
-      </a>
-    </div>
+  </div>
+</header>
 
-      <div class="" data-aos="zoom-in">
+      <br>
+      <section>
+    <div class="border-4 border-[#00BF63] w-full bg-[transparent] h-fit rounded-lg">
+      <div class="shadow-lg p-2 border-t-transparent border-t-4 border-l-4 border-l-transparent border-transparent-500  text-[#ff0099] text-center rounded-lg">
+      <div class="p-2">
+          <div>
+
+      <div class="content-box" data-aos="zoom-in">
      
           <div class=" info-container" style="padding: 0px;" data-aos="zoom-in">
             <div class=" info-container-2 d-flex flex-wrap justify-content-center ">
               <div class=" d-flex align-items-center justify-content-center">
                 <div class="d-flex flex-column pt-3">
-                   <!-- Banner Image -->
-            <img src="/assets/img/banner.png" alt="Prime Ape Ecosystem Presents The Fountain" class="img-fluid">
+                  
+                  <div class="text-center" style="margin-bottom: 10px;">
+                    <img src="assets/img/banner.png" alt="The Fountain" style="max-width: 60%; height: auto;"/>
+                </div>
+              
+            
+                  
+                  
+                 <!-- Container for Stats and Personal Stats -->
+<div class="container-fluid">
+  <div class="row">
+      <!-- Stats Section -->
+      <div class="col-md-6">
+          <div class="content-box stats-box">
+              <h3 class="text-start busd pb-1" style="color:var(--token); letter-spacing: 2px; font-size: x-large; font-family: kanit !important; display: flex; justify-content: center; font-weight: 700;">
+                  <!-- Title or Icon Here -->
+              </h3>
+              <div class="text-center">
+                  <h3 class="text-center texting" style="margin-left: 5px;">Stats</h3>
+                  <hr>
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                              <img src="assets/img/refrwrd.png" alt="Total Referrals" class="stat-image" />
+                              <div class="data">
+                                  <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="total-ref">-</strong>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                              <img src="assets/img/total.png" alt="Users" class="stat-image" />
+                              <div class="data">
+                                  <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="total-players">-</strong>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                              <img src="assets/img/contract.png" alt=" Contract Balance" class="stat-image" />
+                              <div class="data">
+                                  <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="contract-balance">-</strong>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="stat d-flex flex-column justify-content-center align-items-center">
+                              <img src="assets/img/circulating.png" alt="Circulating" class="stat-image" />
+                              <div class="data">
+                                 <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="circulating">-</strong>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="stat d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/burned.png" alt="Burned" class="stat-image" />
+                            <div class="data">
+                                <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="burned">-</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="stat d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/img/price.png" alt="Price" class="stat-image" />
+                            <div class="data">
+                                $<strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="price">-</strong>USD
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    <!-- Personal Fountain Stats Section -->
+<div class="col-md-6">
+  <div class="content-box personal-stats-box">
+      <h3 class="text-start busd pb-1" style="color:var(--token); letter-spacing: 2px; font-size: x-large; font-family: kanit !important; display: flex; justify-content: center; font-weight: 700;">
+          <!-- Title or Icon Here -->
+      </h3>
+      <div class="text-center">
+          <h3 class="text-center texting" style="margin-left: 5px;">Personal Fountain Stats</h3>
+          <hr>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/deposits.png" alt="Initial Deposit" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="initial-deposit">-</strong>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/depinterest.png" alt="Total Deposit" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="total-deposit">-</strong>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/totalwith.png" alt="Total Withdrawn" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="total-withdrawn">-</strong>
+                      </div> 
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/refreward.png" alt="Referral Rewards" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="referral-Reward">-</strong>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 ">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/refaddress.png" alt="Referrer Address" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="referrer-address">-</strong>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 ">
+                  <div class="stat d-flex flex-column justify-content-center align-items-center">
+                      <img src="assets/img/referrals.png" alt="New Data Point" class="stat-image" />
+                      <div class="data">
+                          <strong class="number mb-md-2 busd" style="-webkit-text-stroke: 1px #ffffff; color: #ffffff; letter-spacing: 2px; font-size: 25px;" id="ref-count">-</strong>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>  
+  <div class="mt-4"></div>
+  <hr>
+          <div>
+            <div>
+              <h6 class="text-center">
+                <i style="color: #12859c;" class="ri-alert-line"></i>
+                <strong style="color: #12859c;">
+                  Disclaimer&nbsp;:&nbsp;
+                </strong> Bananas that are deposited cannot be claimed out immediately. Once deposited they will be locked in the contract.
+                You are able to claim them back via the 1% allowed daily to claim, allowing you to claim up to 3 times your initial deposit or compound to increase your earnings.
+                 Users will pay a 10% deposit tax , a compound tax of 5% , and a tiered withdrawal tax starting at 15%. When a user claims above 40,000 tokens then an additional 10% tax is added every 20,000 tokens claimed
+                  until 40%.  0 to 40k no extra tax , 40,001 to 60,000 add 10% , 60,001 to 80,000 add 20%, 80,001 to 100k add 30% , 100,001 to 120k add 40% .
+                   Interest is first taxed 15% then the balance is taxed the additional tax per tier.  
+              <hr/>
+            </div>
+           
+          </div>
+
+
+          <div class="content-box">
+            <!-- Approve, Deposit, and Balance Section -->
+            <div class="row">
+                <!-- Approve Section -->
+                <div class="col-md-4">
+                    <div class="btn-container">
+                        <strong style="padding-left: 5px; padding-bottom: 5px;">
+                            Approve <span class="busd">Bananas</span>
+                            <span class="usd">( <span id="user-approved-spend">0</span> Bananas Approved)</span>
+                            <input class="form-control" id="approve-spend" name="approved-spend" step="100" type="number" value="1">
+                        </strong>
+                        <button class="start-btn3" style="width: 100%; margin-bottom: 10px; margin-top: 15px;" 
+                                onclick="approveToken()" role="button" type="button">
+                            Approve
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Deposit Section -->
+                <div class="col-md-4">
+                    <div class="btn-container">
+                        <strong style="padding-left: 5px; padding-bottom: 5px;">
+                            Deposit <span class="busd">Bananas</span>
+                            <span class="usd">( Min <span class="busd" id="min-deposit">0 </span>, Max <span class="busd" id="max-deposit">0</span> )
+                            </span>
+                            <input class="form-control" id="busd-spend" name="buy-miners" onChange="updateBuyPrice()" step="1" type="number" value="100">
+                        </strong>
+                        <button class="start-btn3" style="width: 100%; margin-bottom: 10px; margin-top: 15px;" id="buy-eggs-btn"
+                                onclick="depositToken()" role="button" disabled>
+                            Enter Fountain
+                        </button>
+                    </div>
+                </div>
+                
+               <!-- Balance Section -->
+               <div class="col-md-4 text-center">
+                   <div style="font-size: 25px;">
+                         <strong class="busd">🍌 Users Wallet 🍌</strong>
+                       </div>
+                     <div>
+                           <strong id="user-balance" style="color: #2dc4d8;">0</strong>🍌
+                     </div>
+                           <span class="usd" style="font-size: 18px;">
+                                ≈ $<span id="user-bal-usd">0</span> USD
+                 </span>
+                     <div style="font-size: 25px; margin-top: 20px;">
+                        <strong class="busd">🍌 Interest 🍌</strong>
+                       </div>
+                        <div>
+                        <strong id="mined" style="color: #2dc4d8;">0</strong>🍌
+                      </div>
+                    <span class="usd" style="font-size: 18px;">
+                      ≈ $<span id="token-price">0</span> USD
+                     </span>
+                     </div>           
+            <!-- Action Buttons and Referral Section -->
+<div class="row mt-3">
+  <div class="col-md-8">
+      <div class="btn-container">
+          <input class="form-control" id="new-referrer-address" name="new-referrer-address" type="text" placeholder="Enter new referrer address" style="margin-bottom: 10px;">
+          <button class="start-btn3" style="width: 100%; margin-bottom: 10px;" id="approve-referrer-btn" onclick="approveRef()" role="button">
+              Approve New Referrer
+          </button>
+        </div></div>
+  <div class="col-md-4">
+    <button class="btn start-btn3" style="width: 100%; margin-bottom: 6px;" id="withdraw" onclick="sellToken()" role="button">
+        Collect
+    </button>
+    <button class="btn start-btn3" style="width: 100%; margin-top: 4px;" id="reinvest" onclick="roll()" role="button">
+        Compound
+    </button>
+</div>
+</div>
+<div class="text-center" style="padding: 10px; font-size: 16px; font-weight: 500; color: white;">
+    <strong>After you have made a deposit using a referral link you can change the referrer address here.</strong>
+</div>
+          <div class="col-lg-12 referral-link">
+            <span>
+              <i class="bi-check2-square"></i>
+              Earn
+              <span id="ref-percent">0%</span>
+              <span>when someone uses your referral link!</span>
+              <span>
+                <a id="reflink"></i></a>
+                <span onclick="copyRef()">
+                  <i class="ri-file-copy-line"></i>
+                  <span id="copied"></span>
+                </span>
+              </span>
           </div>
         </div>
       </div>
-            <div class="stats-row-container justify-center" data-aos="zoom-in">
-              <div class="justify-center">
-                <h3 class="text-center texting" style="margin-left: 5px;">              
-                  Statistics
-                </h3>
-                <hr>
-                <div class="stat d-flex flex-column justify-content-center align-items-center">
-                  <div class="header">
-                      <i class="bi-bank" style="color: #ffffff; font-size: 16px; margin-left: 10px;"></i>&nbsp;
-                      Total Referrals Paid Out
-                  </div>
-                  <div class="data">
-                      <strong class="number mb-md-2 busd"
-                          style="-webkit-text-stroke: 1px #12859c; color: #12859c; letter-spacing: 2px; font-size: 20px;"
-                          id="total-ref">-</strong>
-                  </div>
-              </div>
-              
-              <div class="stat d-flex flex-column justify-content-center align-items-center">
-                  <div class="header">
-                      <i class="bi-bank" style="color:#ffffff; font-size: 16px; margin-left: 10px;"></i>&nbsp;
-                      Contract Balance
-                  </div>
-                  <div class="data">
-                      <strong class="number mb-md-2 busd"
-                          style="-webkit-text-stroke: 1px #12859c; color: #12859c; letter-spacing: 2px; font-size: 20px;"
-                          id="contract-balance">-</strong>
-                  </div>
-              </div>
-              
-              <div class="stat d-flex flex-column justify-content-center align-items-center">
-                  <div class="header">
-                      <i class="bi-bank" style="color: #ffffff; font-size: 16px; margin-left: 10px;"></i>&nbsp;
-                      How Many Deposits Made
-                  </div>
-                  <div class="data">
-                      <strong class="number mb-md-2 busd"
-                          style="-webkit-text-stroke: 1px #12859c; color: #12859c; letter-spacing: 2px; font-size: 20px;"
-                          id="total-players">-</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>              
-              </div>
-            </div>
-          </div>
-     
       </div>
     </div>
-    <br>
-    <br>
-    <br>
-       
+        </div>
+      </div>
     </section>
-  
+  </main>
   <footer id="footer">
-    
+    <div class="container">
+          <span style="color: #12859c;">
+          <div>
+            <strong>
+            <text-align>Platform by Dabs & 3D</text-align>  
+        </strong>     
+      </div>
+    </div>
   </footer>
   <div id="preloader">
   </div>
@@ -180,7 +392,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/moment.js"></script>
   <script src="assets/js/timer.js"></script>
   <!-- Template Main JS File -->

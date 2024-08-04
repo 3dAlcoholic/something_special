@@ -1,1 +1,1 @@
-# something_special
+# NANA-Miner
