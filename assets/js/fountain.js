@@ -16,7 +16,7 @@ var tokenContract;
 
 var farmLPPair;
 
-const fountainAddress = '0xC38163D15E553ba94d59Cee21f75a656441C10AC';                        //mainnet contract
+const fountainAddress = '0x3Eb338B8B64397d90E37931261601359C9c4324c';                        //mainnet contract
 
 const LPAddress = '0x6295d8d76bae4a1c8449b666031f778549090a0f';                              // LP Address
 const deadAddress = '0x000000000000000000000000000000000000dEaD';                            // DEAD Address   
@@ -281,10 +281,12 @@ mainLPPAir.methods.getReserves().call().then(reserves => {
     if (started) {
         contract.methods.getBalance().call().then(balance => {
             contractBalance = balance;
+            if (amt >0) {
             var amt = web3.utils.fromWei(balance);
             $('#contract-balance').html(roundNum(amt));
             // var usd = Number(priceInUSD*amt).toFixed(2);
             // $("#contract-balance-usd").html(usd)
+            }
         }).catch((err) => {
             console.log(err);
         });
