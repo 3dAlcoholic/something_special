@@ -281,12 +281,12 @@ mainLPPAir.methods.getReserves().call().then(reserves => {
     if (started) {
         contract.methods.getBalance().call().then(balance => {
             contractBalance = balance;
-            if (amt >0) {
+            
             var amt = web3.utils.fromWei(balance);
             $('#contract-balance').html(roundNum(amt));
             // var usd = Number(priceInUSD*amt).toFixed(2);
             // $("#contract-balance-usd").html(usd)
-            }
+            
         }).catch((err) => {
             console.log(err);
         });
